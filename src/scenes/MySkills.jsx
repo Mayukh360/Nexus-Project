@@ -12,12 +12,12 @@ const MySkills = () => {
   const products = [
     {
       image: prod1,
-      heading: "Product 1",
-      subheading: "Subheading 1",
+      heading: "Parsley Seed Anti-Oxidant Skin Care Kit ",
+      subheading: "A trio of Parseley Seed staples",
     },
     {
       image: prod2,
-      heading: "Product 2",
+      heading: "Parsley Seed Anti-Oxidant Skin Care Kit",
       subheading: "Subheading 2",
     },
     {

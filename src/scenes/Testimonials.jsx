@@ -1,32 +1,24 @@
-import SocialMediaIcons from "../components/SocialMediaIcons";
-import useMediaQuery from "../hooks/useMediaQuery";
-import { motion } from "framer-motion";
-import AnchorLink from "react-anchor-link-smooth-scroll";
-import image from "../assets/prod8.avif";
-// import { saveAs } from 'file-saver';
+import React from "react";
+import prod8 from "../assets/prod8.avif";
 
-const Testimonials = () => {
+export default function CorporateGifts() {
   return (
     <section
-      
+      style={{ paddingTop: "5rem", paddingLeft: "2rem" }}
       className="md:flex md:justify-between md:items-center gap-16 md:h-full py-10 "
     >
       <div style={{ maxWidth: "500px" }}>
-        
-        <p>Supporting city skin</p>
-        <h3 className="text-3xl font-bold mt-4">
-          Parsley Seed Anti-Oxidant Intense Serum
-        </h3>
-        <p className="mt-2 font-serif text-sm">
-          Explore how this anti-oxidant-rich serum hydrates, replenishes and
-          fortifies the skin via a suite of ingredients selected with urban
-          dwellers in mind.
+        <h3 className="text-4xl font-bold mt-2">Post-Poo Drops has returned</h3>
+        <p className="mt-2 font-serif text-lg">
+          Here to make the malodorous melodious once again. Dispense this
+          favoured formulation into the toilet bowl after flushing to
+          effectively mask disagreeable odours.
         </p>
         <button
           style={{ width: "300px" }}
           className="bg-transparent text-black mt-8 hover:bg-black hover:text-white font-semibold py-2 px-4 border border-black hover:border-transparent rounded transition duration-500 relative"
         >
-          Discover the formulation
+          Discover Post-Poo Drops
           <span
             className="absolute top-1/2 right-3  transform -translate-y-1/2"
             style={{ width: "10px", height: "10px" }}
@@ -37,11 +29,9 @@ const Testimonials = () => {
       </div>
 
       {/* RIGHT SECTION */}
-      <div className="md:w-1/3 mt-8">
-        <img src={image} alt="Profile" className="w-full" />
+      <div className="md:w-1/2 mt-1">
+        <img src={prod8} alt="Profile" className="w-full" />
       </div>
     </section>
   );
-};
-
-export default Testimonials;
+}

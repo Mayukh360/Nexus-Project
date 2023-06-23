@@ -9,7 +9,7 @@ body,
 #root,
 .app {
   height: 100%;
-  background-color: #f9f9db;
+  background-color: #efefe4;
   font-family: sans-serif;
   @apply text-black;
 }

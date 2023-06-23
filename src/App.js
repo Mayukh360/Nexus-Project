@@ -5,12 +5,15 @@ import MySkills from "./scenes/MySkills";
 import LineGradient from "./components/LineGradient";
 import Projects from "./scenes/Projects";
 import Contact from "./scenes/Contact";
-import Footer from "./scenes/Footer";
+
 import useMediaQuery from "./hooks/useMediaQuery";
 import { useEffect, useState } from "react";
 import Testimonials from "./scenes/Testimonials";
 import { motion } from "framer-motion";
 import Prod from "./scenes/Prod";
+import CorporateGifts from "./scenes/CorporateGifts";
+import StoreLoactor from "./scenes/StoreLocator";
+import Footer from "./footer/Footer";
 
 function App() {
   const [selectedPage, setSelectedPage] = useState("home");
@@ -39,6 +42,10 @@ function App() {
       <Testimonials />
       {/* <Prod/> */}
       <Contact />
+      <CorporateGifts/>
+      <StoreLoactor/>
+      <Footer/>
+      
     </div>
     // <div className="app bg-deep-blue">
     //   <Navbar

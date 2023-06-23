@@ -5,48 +5,53 @@ import prod2 from "../assets/prod2.webp";
 import prod3 from "../assets/prod3.webp";
 import prod4 from "../assets/prod4.webp";
 import prod5 from "../assets/prod5.webp";
-import prod6 from "../assets/prod5.webp";
+import prod6 from "../assets/prod6.webp";
 import prod7 from "../assets/prod7.avif";
+import prod8 from "../assets/prod07.webp"
 import { MdChevronLeft, MdChevronRight } from "react-icons/md";
 
 export default function Prod() {
   const products = [
     {
       image: prod1,
-      heading: "Product 1",
-      subheading: "Subheading 1",
+      heading: "Parsley Seed Anti-Oxidant Skin Care Kit ",
+      subheading: "A trio of Parseley Seed staples",
     },
     {
       image: prod2,
-      heading: "Product 2",
-      subheading: "Subheading 2",
+      heading: "Parsley Seed Anti-Oxidant Eye Cream",
+      subheading: "Nourishes delicate around eyes",
     },
     {
       image: prod3,
-      heading: "Product 3",
-      subheading: "Subheading 3",
+      heading: "Parsley Seed Facial Cleansing Oil",
+      subheading: "Gently liberate skin of grime and makeup",
     },
     {
       image: prod4,
-      heading: "Product 1",
-      subheading: "Subheading 1",
+      heading: "Parsley Seed Facial Cleanser",
+      subheading: "For those in polluted urban environments",
     },
     {
       image: prod5,
-      heading: "Product 2",
-      subheading: "Subheading 2",
+      heading: "Parsley Seed Anti-Oxidant Hydrating Cream",
+      subheading: "A potent, nourishing cream",
     },
     {
       image: prod6,
-      heading: "Product 3",
-      subheading: "Subheading 3",
+      heading: "Parsley Seed Anti-Oxidant Hydrator",
+      subheading: "light, rapidly absorbed folication",
     },
     {
-      image: prod6,
-      heading: "Product 3",
-      subheading: "Subheading 3",
+      image: prod8,
+      heading: "Parsley Seed Anti-Oxidant Facial Treatment",
+      subheading: "Fortifies,revives and intensely hydrates",
     },
-    // Add more products here
+    {
+      image: prod7,
+      heading: "Parsley Seed Anti-Oxidant Facial Toner",
+      subheading: "For normal, dry or sensitive skin",
+    },
   ];
 
   const slideLeft = () => {
@@ -91,7 +96,7 @@ export default function Prod() {
         {products.map((product, index) => (
           <motion.div
             key={index}
-            className="w-64 h-64 inline-block p-2 cursor-poonter hover:scale-105 ease-in-out duration-300"
+            className="w-64 h-64 inline-block p-2 ml-8 mr-8 cursor-poonter hover:scale-105 ease-in-out duration-300"
             style={{
               scrollSnapAlign: "start",
             }}
@@ -100,7 +105,7 @@ export default function Prod() {
           >
             <img src={product.image} alt="Product" />
             <div className="text-center">
-              <h3 className="text-lg font-semibold">{product.heading}</h3>
+              <h3 className="text-sm font-semibold">{product.heading}</h3>
               <p className="text-sm">{product.subheading}</p>
             </div>
           </motion.div>

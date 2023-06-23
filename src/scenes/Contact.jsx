@@ -12,39 +12,47 @@ export default function Prod() {
   const products = [
     {
       image: prod9,
-      heading: "Product 1",
-      subheading: "Subheading 1",
+      heading: "Post-Poo Drops",
+      subheading: "A botanical bathroom deodoriser",
     },
     {
       image: prod10,
-      heading: "Product 2",
-      subheading: "Subheading 2",
+      heading: "Aganice Aromatique Candle",
+      subheading: "Cardamom, mimosa, tobacco",
     },
     {
       image: prod10,
-      heading: "Product 3",
-      subheading: "Subheading 3",
+      heading: "Ptolemy Aromatique Candle",
+      subheading: "A sensious blend of leather, smoke and wood",
     },
     {
       image: prod10,
-      heading: "Product 1",
-      subheading: "Subheading 1",
+      heading: "Callippus Aromatique Candle",
+      subheading: "A marriage of deep green and earthy spices",
     },
     {
       image: prod12,
-      heading: "Product 2",
-      subheading: "Subheading 2",
+      heading: "Bronze Incense Holder",
+      subheading: "Suited to any interior",
     },
     {
       image: prod13,
-      heading: "Product 3",
-      subheading: "Subheading 3",
+      heading: "Murasaki Aromatic Incense",
+      subheading: "For those who favour aromas of warm spices",
     },
     {
-      image: prod12,
-      heading: "Product 3",
-      subheading: "Subheading 3",
+      image: prod13,
+      heading: "Kagerou Aromatic Incense",
+      subheading: "For those particularly partial to Vetiver",
     },
+   
+    {
+      image: prod13,
+      heading: "Sarashina Aromatic Incense",
+      subheading: "For those particularly partial to Sandalwood",
+    },
+   
+   
     // Add more products here
   ];
 
@@ -90,7 +98,7 @@ export default function Prod() {
         {products.map((product, index) => (
           <motion.div
             key={index}
-            className="w-64 h-64 inline-block p-2 cursor-poonter hover:scale-105 ease-in-out duration-300"
+            className="w-64 h-64 inline-block p-2 mr-8 ml-8 cursor-poonter hover:scale-105 ease-in-out duration-300"
             style={{
               scrollSnapAlign: "start",
             }}

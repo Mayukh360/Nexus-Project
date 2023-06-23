@@ -8,7 +8,7 @@ import image from "../assets/nexus1.avif";
 const Landing = () => {
   return (
     <section
-      style={{ backgroundColor: "#efefae", padding: "6rem" }}
+      style={{ backgroundColor: "#efefd7", paddingTop: "5rem", paddingLeft:"2rem" }}
       className="md:flex md:justify-between md:items-center gap-16 md:h-full py-10 "
     >
       <div style={{ maxWidth: "500px" }}>
@@ -17,7 +17,7 @@ const Landing = () => {
         <h3 className="text-3xl font-bold mt-4">
           Parsley Seed Anti-Oxidant Intense Serum
         </h3>
-        <p className="mt-2 font-serif text-sm">
+        <p className="mt-2 font-serif text-md">
           Explore how this anti-oxidant-rich serum hydrates, replenishes and
           fortifies the skin via a suite of ingredients selected with urban
           dwellers in mind.
@@ -37,7 +37,7 @@ const Landing = () => {
       </div>
 
       {/* RIGHT SECTION */}
-      <div className="md:w-1/3 mt-8">
+      <div className="md:w-1/2 mt-1">
         <img src={image} alt="Profile" className="w-full" />
       </div>
     </section>
