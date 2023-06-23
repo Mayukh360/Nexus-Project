@@ -186,7 +186,7 @@ const Navbar = ({ selectedPage, setSelectedPage }) => {
             </div>
 
             {/* MENU ITEMS */}
-            <div className="flex flex-col gap-6 ml-[33%] text-sm text-deep-blue h-[calc(100% - 96px)] overflow-y-scroll">
+            <div className="flex flex-col gap-3 ml-[33%] text-sm text-deep-blue h-[calc(100% - 96px)] overflow-y-scroll">
               <Link page="Skin care" />
               <Link page="Body & Hand" />
               <Link page="Hair" />
