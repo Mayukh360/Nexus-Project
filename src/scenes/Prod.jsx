@@ -7,7 +7,7 @@ import prod4 from "../assets/prod4.webp";
 import prod5 from "../assets/prod5.webp";
 import prod6 from "../assets/prod6.webp";
 import prod7 from "../assets/prod7.avif";
-import prod8 from "../assets/prod07.webp"
+import prod8 from "../assets/prod07.webp";
 import { MdChevronLeft, MdChevronRight } from "react-icons/md";
 
 export default function Prod() {
@@ -86,11 +86,21 @@ export default function Prod() {
             environments, to fortify the skin against the damaging effects of
             free radicals.
           </p>
-          <button
-            style={{ width: "300px" }}
-            className="bg-transparent text-black mt-8  font-semibold py-2 px-4   rounded transition duration-500 relative"
-          >
-            Explore The Range
+          <button type="button" className="btn bg-transparent text-black">
+            Explore the range{" "}
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              className="bi bi-arrow-right ml-2"
+              viewBox="0 0 16 16"
+            >
+              <path
+                fillRule="evenodd"
+                d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"
+              />
+            </svg>
           </button>
         </div>
         {products.map((product, index) => (

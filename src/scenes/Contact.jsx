@@ -45,14 +45,13 @@ export default function Prod() {
       heading: "Kagerou Aromatic Incense",
       subheading: "For those particularly partial to Vetiver",
     },
-   
+
     {
       image: prod13,
       heading: "Sarashina Aromatic Incense",
       subheading: "For those particularly partial to Sandalwood",
     },
-   
-   
+
     // Add more products here
   ];
 
@@ -77,22 +76,27 @@ export default function Prod() {
         className="w-full h-full overflow-x-scroll scroll whitespace-nowrap scroll-smooth "
       >
         <div style={{ Width: "100px" }} className="mt-24">
-          <p className="font-bold">Parsley Seed Skin Care</p>
-          <h3 className="text-3xl font-bold mt-4">
-            Fortification of the highest order
-          </h3>
+          <p className="font-bold">For the Home</p>
+          <h3 className="text-3xl  mt-4">Domestic Pleasure</h3>
           <p className="mt-2 font-serif text-sm">
-            Our Parsley Seed Skin Care range provides potent doses of
-            anti-oxidant rich ingredients in formulations suited to all skin
-            types. They are especially recommended for those in urban
-            environments, to fortify the skin against the damaging effects of
-            free radicals.
+            Our range of aromatic formulations for the home are practical and
+            pleasing in equal measure.
           </p>
-          <button
-            style={{ width: "300px" }}
-            className="bg-transparent text-black mt-8  font-semibold py-2 px-4   rounded transition duration-500 relative"
-          >
-            Explore The Range
+          <button type="button" className="btn bg-transparent text-black">
+            See all Home{" "}
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              className="bi bi-arrow-right ml-2"
+              viewBox="0 0 16 16"
+            >
+              <path
+                fillRule="evenodd"
+                d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"
+              />
+            </svg>
           </button>
         </div>
         {products.map((product, index) => (

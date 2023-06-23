@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import store1 from "../assets/store1.avif";
 import store2 from "../assets/store2.avif";
 import store3 from "../assets/store3.jpg";
-import { MdKeyboardArrowLeft, MdKeyboardArrowRight } from 'react-icons/md';
+
 
 export default function StoreLoactor() {
   const products = [
@@ -58,6 +58,7 @@ export default function StoreLoactor() {
             <span className="block w-full h-full border-t border-r border-white transform rotate-45 -translate-x-1 -translate-y-1/2" />
           </span>
         </button>
+      
       </div>
 
       {/* RIGHT SECTION */}

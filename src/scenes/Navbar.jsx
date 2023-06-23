@@ -10,6 +10,7 @@ import navbar1 from "../assets/navbar1.jpg";
 import navbar2 from "../assets/navbar2.jpg";
 import navbar3 from "../assets/navbar3n.jpg";
 import navbar4 from "../assets/navbar4.jpg";
+import { MdChevronLeft, MdChevronRight } from "react-icons/md";
 
 const Link = ({ page, selectedPage, setSelectedPage }) => {
   const lowerCasePage = page.toLowerCase();
@@ -50,6 +51,15 @@ const Navbar = ({ selectedPage, setSelectedPage }) => {
       subheading: "Musing from The Rain Garden",
     },
   ];
+
+  const slideLeft = () => {
+    var slider = document.getElementById("slider");
+    slider.scrollLeft = slider.scrollLeft - 500;
+  };
+  const slideRight = () => {
+    var slider = document.getElementById("slider");
+    slider.scrollLeft = slider.scrollLeft + 500;
+  };
 
   const [isTopOfPage, setIsTopOfPage] = useState(true);
   const [isMenuToggled, setIsMenuToggled] = useState(false);
@@ -176,7 +186,7 @@ const Navbar = ({ selectedPage, setSelectedPage }) => {
             </div>
 
             {/* MENU ITEMS */}
-            <div className="flex flex-col gap-6 ml-[33%] text-sm text-deep-blue">
+            <div className="flex flex-col gap-6 ml-[33%] text-sm text-deep-blue h-[calc(100% - 96px)] overflow-y-scroll">
               <Link page="Skin care" />
               <Link page="Body & Hand" />
               <Link page="Hair" />
@@ -189,6 +199,11 @@ const Navbar = ({ selectedPage, setSelectedPage }) => {
               <Link page="Facial Appointments" />
             </div>
             <div className="relative flex items-center">
+              <MdChevronLeft
+                className="opacity-50 cursor-pointer hover:opacity-100"
+                size={40}
+                onClick={slideLeft}
+              />
               <div
                 id="slider"
                 className="w-full h-full overflow-x-scroll scroll whitespace-nowrap scroll-smooth "
@@ -203,7 +218,7 @@ const Navbar = ({ selectedPage, setSelectedPage }) => {
                     whileHover={{ scale: 1.05 }}
                     whileTap={{ scale: 0.95 }}
                   >
-                    <img src={product.image} alt="Product"   />
+                    <img src={product.image} alt="Product" />
                     <div className="text-center">
                       <h3 className="text-sm font-bold text-black">
                         {product.heading}
@@ -215,6 +230,11 @@ const Navbar = ({ selectedPage, setSelectedPage }) => {
                   </motion.div>
                 ))}
               </div>
+              <MdChevronRight
+                className="opacity-50 cursor-pointer hover:opacity-100"
+                size={40}
+                onClick={slideRight}
+              />
             </div>
           </div>
         )}
