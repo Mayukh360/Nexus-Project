@@ -1,8 +1,6 @@
 import Navbar from "./scenes/Navbar";
 import Landing from "./scenes/Landing";
-import DotGroup from "./scenes/DotGroup";
-import MySkills from "./scenes/MySkills";
-import LineGradient from "./components/LineGradient";
+import { FiMessageCircle } from "react-icons/fi";
 import Projects from "./scenes/Projects";
 import Contact from "./scenes/Contact";
 
@@ -33,95 +31,20 @@ function App() {
   }, []);
 
   return (
-
     <div>
-      <Navbar/>
-      <Landing  />
-      <Prod/>
+      <Navbar />
+      <Landing />
+      <Prod />
       <Projects />
       <Testimonials />
-      {/* <Prod/> */}
+      <div className="fixed bottom-6 right-6 bg-gray-800 rounded-full p-3 cursor-pointer text-white">
+        <FiMessageCircle className="w-6 h-6" />
+      </div>
       <Contact />
-      <CorporateGifts/>
-      <StoreLoactor/>
-      <Footer/>
-      
+      <CorporateGifts />
+      <StoreLoactor />
+      <Footer />
     </div>
-    // <div className="app bg-deep-blue">
-    //   <Navbar
-    //     isTopOfPage={isTopOfPage}
-    //     selectedPage={selectedPage}
-    //     setSelectedPage={setSelectedPage}
-    //   />
-    //   <div className="w-6/6 mx-auto md:h-full">
-    //   <Landing setSelectedPage={setSelectedPage} />
-    //   <Prod/>
-    //   <Projects />
-    //   <Prod/>
-    //   <Testimonials />
-    //   <Contact />
-    //   </div>
-        
-    //   <div >
-    //     {/* {isDesktop && (
-    //       <DotGroup
-    //         selectedPage={selectedPage}
-    //         setSelectedPage={setSelectedPage}
-    //       />
-    //     )} */}
-    //     <motion.div
-    //       margin="0 0 -200px 0"
-    //       amount="all"
-    //       onViewportEnter={() => setSelectedPage("home")}
-    //     >
-    //       {/* <Landing setSelectedPage={setSelectedPage} /> */}
-    //     </motion.div>
-    //   </div>
-    //   {/* <LineGradient /> */}
-    //   <div  className="w-5/6 mx-auto md:h-full ">
-    //     <motion.div
-    //       margin="0 0 -200px 0"
-    //       amount="all"
-    //       onViewportEnter={() => setSelectedPage("skills")}
-    //     >
-    //       {/* <MySkills /> */}
-    //       {/* <Prod/> */}
-    //     </motion.div>
-    //   </div>
-      
-    //   {/* <LineGradient /> */}
-    //   <div className="w-5/6 mx-auto">
-    //     <motion.div
-    //       margin="0 0 -200px 0"
-    //       amount="all"
-    //       onViewportEnter={() => setSelectedPage("projects")}
-    //     >
-    //       {/* <Projects /> */}
-    //     </motion.div>
-    //   </div>
-      
-    //   {/* <LineGradient /> */}
-    //   <div className="w-5/6 mx-auto md:h-full mb-96">
-    //     <motion.div
-    //       margin="0 0 -200px 0"
-    //       amount="all"
-    //       onViewportEnter={() => setSelectedPage("testimonials")}
-    //     >
-    //       {/* <Testimonials /> */}
-    //     </motion.div>
-    //   </div>
-    //   {/* <LineGradient /> */}
-    //   <div className="w-5/6 mx-auto md:h-full mb-16">
-    //     <motion.div
-    //       margin="0 0 -200px 0"
-    //       amount="all"
-    //       onViewportEnter={() => setSelectedPage("contact")}
-    //     >
-    //       {/* <Contact /> */}
-    //     </motion.div>
-    //   </div>
-    //   <Footer />
-    // </div>
   );
 }
 
